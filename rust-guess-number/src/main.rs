@@ -17,7 +17,10 @@ fn main() {
 
         let guess: u32 = match guess.trim().parse() {
             Ok(result) => result,
-            Err(_) => continue
+            Err(error) => {
+                println!("{}", error.to_string());
+                continue;
+            }
         };
 
         println!("Your guess: {}", guess);

@@ -1,0 +1,6 @@
+[package]
+name = "philosophers"
+version = "0.1.0"
+authors = ["Vladislav Kalyazin <vladislav.kalyazin@softheme.com>"]
+
+[dependencies]
