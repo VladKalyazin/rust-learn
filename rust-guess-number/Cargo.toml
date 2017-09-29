@@ -1,7 +1,7 @@
 [package]
 name = "rust-guess-number"
 version = "0.1.0"
-authors = ["VladKalyazin <vladislav.kalyazin@gmail.com>"]
+authors = ["Vladislav Kalyazin <vladislav.kalyazin@gmail.com>"]
 
 [dependencies]
 rand="*"

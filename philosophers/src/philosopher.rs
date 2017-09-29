@@ -1,3 +1,6 @@
+extern crate rand;
+
+use rand::Rng;
 use std::thread;
 use std::time::Duration;
 use table::Table;
@@ -18,8 +21,10 @@ impl Philosopher {
     }
 
     pub fn eat(&self, table: &Table) {
+        let sleep_ms = rand::thread_rng().gen_range(10, 400);
+        thread::sleep(Duration::from_millis(sleep_ms));
+
         let _left = table.forks[self.left].lock().unwrap();
-        thread::sleep(Duration::from_millis(400));
         let _right = table.forks[self.right].lock().unwrap();
 
         println!("{} started eating.", self.name);

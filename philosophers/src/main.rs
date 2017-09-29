@@ -1,3 +1,5 @@
+extern crate rand;
+
 mod philosopher;
 mod table;
 
@@ -22,7 +24,7 @@ fn main() {
         Philosopher::new("p2", 1, 2),
         Philosopher::new("p3", 2, 3),
         Philosopher::new("p4", 3, 4),
-        Philosopher::new("p5", 0, 4),
+        Philosopher::new("p5", 4, 0),
     ];
 
     let handles: Vec<_> = philosophers
