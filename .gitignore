@@ -1,3 +1,6 @@
 .idea/
 .vscode/
+.vs/
 target/
+[Bb]in/
+[Oo]bj/
